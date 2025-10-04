@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <div class="cart-info" id="cartBtn">Cart (<span id="cartCount">0</span>) ₹<span id="cartTotal">0</span></div>
+    </header>
+
+    <div class="controls">
+        <input id="searchInput" placeholder="Search recipes..." />
+        <button id="searchBtn">Search</button>
+        <select id="sortSelect">
+            <option value="">Sort By</option>
+            <option value="rating">Rating</option>
+            <option value="price_low">Price (Low → High)</option>
+            <option value="price_high">Price (High → Low)</option>
+        </select>
+        <button id="viewFav">View Favorites</button>
+    </div>
+    <div id="resultsInfo" class="muted">Loading recipes...</div>
+    <div id="grid" class="grid"></div>
+    <div id="modalRoot"></div>
+
+</body>
+
+</html>
